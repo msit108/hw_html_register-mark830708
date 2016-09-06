@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>申請會員</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet"
+          href="jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css" />
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+</head>
+<body>
+        <div data-role="page">
+            <div data-role="header" data-position="fixed">
+                <h1>歡迎加入9453會員</h1>
+            </div>
+            <div data-role="content">
+                <form method="post" action="http://jsapplab.site88.net/echo.php">
+
+                    <div>
+                        <label for="txtname">會員帳號:</label>
+                        <input type="text"
+                               name="txtID" id="txtID" value="" placeholder="請輸入帳號" />
+                    </div>
+
+                    <div>
+                        <label for="txtPW">會員密碼:</label>
+                        <input type="password"
+                               name="txtPW" id="txtPW" value="" placeholder="請輸入密碼" />
+                    </div>
+
+                    <div>
+                        <label for="txtname">會員姓名:</label>
+                        <input type="text"
+                               name="txtname" id="txtname" value="" placeholder="請輸入姓名" />
+                    </div>
+
+                    <div>
+                        <label for="txtnumber">身分證字號:</label>
+                        <input type="text"
+                               name="txtnumber" id="txtnumber" value="" placeholder="請輸入身分證號碼" />
+                    </div>
+
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>您的性別:</legend>
+                        <input type="radio" name="rdoBG" id="rdoBG0" value="0" checked="checked" />
+                        <label for="rdoBG0">男</label>
+                        <input type="radio" name="rdoBG" id="rdoBG1" value="1" />
+                        <label for="rdoBG1">女</label>
+                    </fieldset>
+
+                    <div>
+                        您的生日:
+                        <input type="date" name="bday">
+                    </div>
+
+                    <div>
+                        <label for="txtPN">手機號碼:</label>
+                        <input type="text" name="txtPN" id="txtPN" value="" placeholder="請輸入手機號碼" />
+                        <input type="checkbox" id="chk" name="chk" />
+                        <label for="chk">不公開我的電話</label>
+                    </div>
+
+                    <fieldset data-role="controlgroup">
+                        <label for="City[]">您居住的城市:</label>
+                        <select name="City[]" id="City" data-native-menu="false">
+                            <option value="-1" data-placeholder="true">請選擇您居住的城市:</option>
+                            <option value="0">基隆</option>
+                            <option value="1">台北</option>
+                            <option value="2">桃園</option>
+                            <option value="3">新竹</option>
+                            <option value="4">苗栗</option>
+                            <option value="5">台中</option>
+                            <option value="6">彰化</option>
+                            <option value="7">南投</option>
+                            <option value="8">雲林</option>
+                            <option value="9">嘉義</option>
+                            <option value="10">台南</option>
+                            <option value="11">高雄</option>
+                            <option value="12">屏東</option>
+                            <option value="10">宜蘭</option>
+                            <option value="13">花蓮</option>
+                            <option value="14">台東</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset data-role="controlgroup">
+                        <legend>喜愛的休閒活動:</legend>
+                        <label><input type="checkbox" name="chkKTV" /> KTV </label>
+                        <label><input type="checkbox" name="chkMOVIE" /> 看電影 </label>
+                        <label><input type="checkbox" name="chkPUB" /> 夜店 </label>
+                        <label><input type="checkbox" name="chkPOOLBALL" /> 撞球 </label>
+                        <label><input type="checkbox" name="chkBOWLING" /> 保齡球 </label>
+                    </fieldset>
+
+                    <fieldset data-role="controlgroup">
+                        <legend>最喜歡的藝人:</legend>
+                        <input type="radio" name="rdoSinger" id="rdoSinger0" value="0" checked="checked" />
+                        <label for="rdoSinger0">玖壹壹</label>
+
+                        <input type="radio" name="rdoSinger" id="rdoSinger1" value="1" />
+                        <label for="rdoSinger1">謝和弦</label>
+
+                        <input type="radio" name="rdoSinger" id="rdoSinger2" value="2" />
+                        <label for="rdoSinger2">頑童MJ116</label>
+
+                        <input type="radio" name="rdoSinger" id="rdoSinger3" value="3" />
+                        <label for="rdoSinger3">Under Lover</label>
+                    </fieldset>
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><input type="submit" name="btnOK" value="確認加入會員" /></div>
+                    <div class="ui-block-b"><input type="submit" name="btnCancel" value="取消加入會員" /></div>
+                </div>
+
+                 <div data-role="footer" data-position="fixed">
+                     <h2>Welcome To 9453 !!!!!</h2>
+                 </div>
+
+                </form>
+            </div>
+        </div>
+</body>
+</html>
